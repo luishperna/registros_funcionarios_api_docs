@@ -6,6 +6,7 @@ site_description: API para registrar informações de funcionários em um banco 
 # Inserindo nome e url do repositório da API no GitHub
 repo_name: Repositório da API
 repo_url: https://github.com/luishperna/registros_funcionarios_api
+edit_uri: ''
 
 # Customizando o menu de navegação do site
 nav:
