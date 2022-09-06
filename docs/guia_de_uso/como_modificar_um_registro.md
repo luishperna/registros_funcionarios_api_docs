@@ -1,0 +1,1 @@
+# Como Consultar um Registro ![imagem-versao](https://img.shields.io/badge/PATCH-3eb096?style=flat-square)

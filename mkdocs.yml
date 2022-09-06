@@ -1,0 +1,65 @@
+# Inserindo nome e descrição do site
+site_name: RegistrosFuncionariosAPI
+site_author: Luís Henrique Perna
+site_description: API para registrar informações de funcionários em um banco de dados
+
+# Inserindo nome e url do repositório da API no GitHub
+repo_name: Repositório da API
+repo_url: https://github.com/luishperna/registros_funcionarios_api
+
+# Customizando o menu de navegação do site
+nav:
+    - Visão Geral: index.md
+    - Importante ⚠️: importante.md
+    - Testar API: testar_api.md
+    - Guia de Uso:
+      - Considerações Iniciais: guia_de_uso/index.md
+      - Informações sobre a API: guia_de_uso/informacoes_sobre_a_api.md
+      - Verificando Status da API: guia_de_uso/verificando_status_api.md
+      - Como Cadastrar um Registro: guia_de_uso/como_cadastrar_um_registro.md
+      - Como Consultar um Registro: guia_de_uso/como_consultar_um_registro.md
+      - Como Modificar um Registro: guia_de_uso/como_modificar_um_registro.md
+      - Como Anular um Registro: guia_de_uso/como_anular_um_registro.md
+    - Códigos-fontes: codigos_fontes.md
+    - Desenvolvedor: desenvolvedor.md
+
+# Customizando o tema do site
+theme:
+  name: material
+  language: pt-BR
+  logo: imagens/LuP.png
+  favicon: imagens/LuP.png
+  palette:
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Modo escuro
+      accent: light blue
+
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/lightbulb
+        name: Modo claro
+      accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+
+# Inserindo redes sociais no rodapé
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/luishperna
+      name: Acesse meu GitHub
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/luishperna
+      name: Acesse meu LinkedIn
+
+# Inserindo Copyright no rodapé
+copyright: Copyright &copy; 2022 Luís Henrique Perna
+
+# Inserindo extensões para customizar o alinhamento dos conteúdos do site
+markdown_extensions:
+  - attr_list
+  - md_in_html

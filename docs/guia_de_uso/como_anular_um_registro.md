@@ -1,0 +1,1 @@
+# Como Anular um Registro ![imagem-versao](https://img.shields.io/badge/DELETE-f93e3e?style=flat-square)

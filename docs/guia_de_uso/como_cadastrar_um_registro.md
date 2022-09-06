@@ -1,0 +1,1 @@
+# Como Cadastrar um Registro ![imagem-versao](https://img.shields.io/badge/POST-43bf86?style=flat-square)
