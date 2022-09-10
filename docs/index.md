@@ -31,23 +31,23 @@ Rotas (endpoint) para acesso à RegistrosFuncionariosAPI:
 
 3. **Status**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/status](https://registros-funcionarios-api.herokuapp.com/status)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/status](https://registros-funcionarios-api.luishperna.com.br/status)
 
 4. **Cadastros**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/funcionarios/cadastros](https://registros-funcionarios-api.herokuapp.com/funcionarios/cadastros)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/cadastros](https://registros-funcionarios-api.luishperna.com.br/funcionarios/cadastros)
 
 5. **Consultas**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/funcionarios/consultas](https://registros-funcionarios-api.herokuapp.com/funcionarios/consultas)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas](https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas)
 
 6. **Modificações**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/funcionarios/modificacoes](https://registros-funcionarios-api.herokuapp.com/funcionarios/modificacoes)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes](https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes)
 
 7. **Anulações**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/funcionarios/anulacoes](https://registros-funcionarios-api.herokuapp.com/funcionarios/anulacoes)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes](https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes)
 
 ---
 
