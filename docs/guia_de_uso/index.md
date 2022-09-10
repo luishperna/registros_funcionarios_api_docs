@@ -27,9 +27,8 @@ Nome                      | senhor das Estrelas              | Peter Jason Quill
 Data de nascimento        | 0093-13-31                       | 1980-12-20
 CPF                       | 1.23.12-312312                   | 123.123.123-12
 Email                     | perteroloko.omelhor              | perterquill@gmail.com
-Cargo                     | só nos compiuter                 | Desenvolvedor Web Júnior 
+Cargo                     | só nos compiuter                 | Desenvolvedor Web 
 Data de início ou entrada | 3000-09-07                       | 2022-09-07
 Data de cancelamento      | trabalhando ainda                | NULL
-Comportamento             | O melhor do mundo                | Proativo e responsável
-
+Comportamento             | O melhor do mundo                | Proativo
 ---

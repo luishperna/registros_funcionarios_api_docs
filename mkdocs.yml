@@ -64,3 +64,6 @@ copyright: Copyright &copy; 2022 Luís Henrique Perna
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 

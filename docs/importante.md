@@ -6,7 +6,7 @@
 
 ## Finalidade da API
 
-A API foi desenvolvida com a finalidade de **simular uma aplicabilidade** em uma empresa fictício, sendo assim, não apresentando usabilidade real.
+A API foi desenvolvida com a finalidade de **simular uma aplicabilidade** em uma empresa fictícia, sendo assim, não apresentando usabilidade real.
 
 O foco da RegistrosFuncionariosApi é apenas para **fins de estudo pessoal** sobre Interface de Programação de Aplicações.
 

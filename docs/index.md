@@ -21,13 +21,13 @@ Rotas (endpoint) para acesso à RegistrosFuncionariosAPI:
 
 1. **Home**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com](https://registros-funcionarios-api.herokuapp.com)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br](https://registros-funcionarios-api.luishperna.com.br)
 
 2. **Swagger/OpenAPI**
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/docs](https://registros-funcionarios-api.herokuapp.com/docs)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/docs](https://registros-funcionarios-api.luishperna.com.br/docs)
 
-    `URL` [https://registros-funcionarios-api.herokuapp.com/openapi.jsons](https://registros-funcionarios-api.herokuapp.com/openapi.json)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/openapi.json](https://registros-funcionarios-api.luishperna.com.br/openapi.json)
 
 3. **Status**
 
@@ -77,17 +77,17 @@ A API utiliza de 4 [métodos de requisição HTTP](https://developer.mozilla.org
 
 A estruturação do banco de dados foi criada para receber os principais dados dos funcionários, como mostrado na tabela abaixo:
 
-Dados do funcionário      | Obrigatoriedade | 
----------                 | :------:
-Código de identificação   | ✔️
-Nome                      | ✔️
-Data de nascimento        | ✔️
-CPF                       | ✔️
-Email                     | ✔️
-Cargo                     | ✔️
-Data de início ou entrada | ✔️
-Data de cancelamento      | Aceita valor NULL
-Comportamento             | Aceita string vazia  
+Dados do funcionário      | Aceitação de  valores duplicados | Obrigatoriedade
+---------                 | :------:                         | :------:
+Código de identificação   | ❌                              | ✔️
+Nome                      | ✔️                              | ✔️
+Data de nascimento        | ✔️                              | ✔️
+CPF                       | ❌                              | ✔️
+Email                     | ❌                              | ✔️
+Cargo                     | ✔️                              | ✔️
+Data de início ou entrada | ✔️                              | ✔️
+Data de cancelamento      | ✔️                              | Aceita valor NULL
+Comportamento             | ✔️                              | Aceita string vazia  
 
 ---
 

@@ -8,17 +8,16 @@ Este sou eu:
 
 ---
 
-![Image title](imagens/perfil.png){ align=left }
-Me chamo **Luís Henrique Perna**
+Me chamo **Luís Henrique Perna**, estou graduando em **Engenharia de Software** e esse é mais um projetinho fonte de meus estudos na área de desenvolvimento de aplicações.
 
-Estou graduando em **Engenharia de Software**
+<figure markdown>
+  ![Imagem perfil](imagens/perfil.png)
 
-Desenvolvi a RegistrosFuncionariosApi com o intuito de aprender mais sobre APIs
+  [🌐 Meu Portfólio 🌐](https://luishperna.com.br/)
 
-Além de gregar também a cerca de documentação de softwares, como essa aqui
+  Perfil [GitHub](https://github.com/luishperna)
+</figure>
 
-Caso queira me conhecer mais acesse [Meu Site Portfólio](https://luishperna.com.br/) 
-
-Para ver outros projetos acesse [Meu GitHub](https://github.com/luishperna)
+Desenvolvi a RegistrosFuncionariosApi com o intuito de aprender mais sobre APIs, além de gregar também a cerca de documentações de softwares, como essa aqui.
 
 ---
