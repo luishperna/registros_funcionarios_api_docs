@@ -633,7 +633,7 @@ registros de funcionários</strong> em um banco de dados SGBD MySQL, o famoso <e
 <p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br">https://registros-funcionarios-api.luishperna.com.br</a></p>
 </li>
 <li>
-<p><strong>Swagger/OpenAPI</strong></p>
+<p><strong>Swagger UI/OpenAPI</strong></p>
 <p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/docs">https://registros-funcionarios-api.luishperna.com.br/docs</a></p>
 <p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/openapi.json">https://registros-funcionarios-api.luishperna.com.br/openapi.json</a></p>
 </li>
@@ -647,7 +647,7 @@ registros de funcionários</strong> em um banco de dados SGBD MySQL, o famoso <e
 </li>
 <li>
 <p><strong>Consultas</strong></p>
-<p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas">https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas</a></p>
+<p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}">https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}</a></p>
 </li>
 <li>
 <p><strong>Modificações</strong></p>
@@ -655,12 +655,12 @@ registros de funcionários</strong> em um banco de dados SGBD MySQL, o famoso <e
 </li>
 <li>
 <p><strong>Anulações</strong></p>
-<p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes">https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes</a></p>
+<p><code>URL</code> <a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes/{cpf}">https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes/{cpf}</a></p>
 </li>
 </ol>
 <hr />
 <h2 id="compatibilidade-da-api">Compatibilidade da API</h2>
-<p>A RegistrosFuncionariosAPI utiliza do formatado <a href="https://www.alura.com.br/artigos/o-que-e-json?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePrXco4vblHC4vywuTu31zVXxDIZMZik2M_7Sm9iHTcAm_EUtxBgbAaAkWpEALw_wcB">JSON</a> para realizar as comunicações entre os sistemas, assim facilitando o tráfego de dados entre aplicações distintas e havendo um ponto em comum entre diversas linguagens de programação.</p>
+<p>A RegistrosFuncionariosAPI utiliza do formato <a href="https://www.alura.com.br/artigos/o-que-e-json?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePrXco4vblHC4vywuTu31zVXxDIZMZik2M_7Sm9iHTcAm_EUtxBgbAaAkWpEALw_wcB">JSON</a> para realizar as comunicações entre os sistemas, assim facilitando o tráfego de dados entre aplicações distintas e havendo um ponto em comum entre diversas linguagens de programação.</p>
 <hr />
 <h2 id="metodos-da-api">Métodos da API</h2>
 <p>A API utiliza de 4 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods">métodos de requisição HTTP</a> responsáveis por indicar as ações a serem executadas para um dado recurso.</p>
@@ -732,7 +732,7 @@ registros de funcionários</strong> em um banco de dados SGBD MySQL, o famoso <e
 </table>
 <hr />
 <h3 id="modelagem-do-banco-de-dados">Modelagem do Banco de Dados</h3>
-<p>A API integra com um banco de dados SGBD MySQL hospedado e modelado unicamente para está aplicação.</p>
+<p>A API integra com um banco de dados SGBD MySQL hospedado e modelado unicamente para essa aplicação.</p>
 <p>A imagem a seguir exibe mais detalhamento da modelagem implementada:</p>
 <p><img alt="imagem-python" src="imagens/db_model.png" /></p>
 <hr />

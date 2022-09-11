@@ -626,9 +626,13 @@
 <span class="w">  </span><span class="nt">&quot;comportamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Observação</p>
+<p>Caso o funcionário(a) ainda esteja ativo(a) no cargo passe <code>NULL</code> ou <code>null</code> como valor da chave data_cancelamento.</p>
+</div>
 <hr />
 <h2 id="respostas-da-requisicao">Respostas da Requisição</h2>
-<p>Ao realizar a requisição pode-se retornar uma das duas repostas: status de <strong>sucesso</strong> ou status de <strong>erro</strong>.</p>
+<p>Ao realizar a requisição pode-se retornar uma das duas respostas: status de <strong>sucesso</strong> ou status de <strong>erro</strong>.</p>
 <h3 id="status-de-sucesso">Status de Sucesso ✔️</h3>
 <p>Essa resposta informa o funcionário(a) cadastrado(a) e seu código.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
@@ -655,10 +659,10 @@
 <div class="highlight"><pre><span></span><code><span class="c1"># Importando a biblioteca requests para trabalhar com solicitações HTTP</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="c1"># Link público da API para requisições do tipo POST</span>
+<span class="c1"># Link público da API para requisições do tipo POST - Cadastrar um registro</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://registros-funcionarios-api.luishperna.com.br/funcionarios/cadastros&#39;</span>
 
-<span class="c1"># Informações no formato JSON a ser enviado na requisição POST</span>
+<span class="c1"># Informações no formato JSON a ser enviado na requisição POST - Cadastrar um registro</span>
 <span class="n">informacoes</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;{</span>
 <span class="s1">    &quot;nome&quot;: &quot;Peter Jason Quill&quot;,</span>
 <span class="s1">    &quot;data_nascimento&quot;: &quot;1980-12-20&quot;,</span>

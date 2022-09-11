@@ -651,18 +651,21 @@
 <p>Após o carregamento da página, será possível acessar as rotas da API para testá-las, como mostrado na imagem a seguir:</p>
 <p><img alt="imagem-tela-rotas-api" src="../imagens/tela_rotas_api.png" /></p>
 <p>Escolha uma das operações mostradas no qual deseja executar.</p>
+<hr />
 <h3 id="operacoes-da-api">Operações da API</h3>
 <p>Clique na operação escolhida e siga a orientação abaixo correspondente a sua escolha.</p>
 <h4 id="home-da-api">👀 Home da API</h4>
 <p>Para testar essa operação basta clicar em <strong>Try it out</strong> e posteriormente em <strong>Execute</strong>.</p>
-<p>O retorna será um <code>JSON</code> contento as informações sobre a API, como o mostrado abaixo:</p>
+<p>O retorno será um <code>JSON</code> contento as informações sobre a API, como o mostrado abaixo:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Aplicação&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Web/API&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Projeto&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RegistrosFuncionariosApi&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Usabilidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Operações CRUD de registros de funcionários no banco de dados&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Documentação&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://registros-funcionarios-api-docs.luishperna.com.br&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Rotas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;/docs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Documentação gerada pelo FastApi&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;/&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Método GET - Home da API&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;/docs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Swagger UI da API&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;/openapi.json&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OpenAPI da API&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;/status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Método GET - Status da API&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;/funcionarios/cadastros&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Método POST - Cadastrar um registro&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;/funcionarios/consultas/{cpf}&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Método GET - Consultar um registro&quot;</span><span class="p">,</span><span class="w"></span>
@@ -673,13 +676,15 @@
 <span class="w">  </span><span class="nt">&quot;Desenvolvedor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Luís Henrique Perna&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<hr />
 <h4 id="verificar-status-da-api">✅ Verificar status da API</h4>
 <p>Para testar essa operação basta clicar em <strong>Try it out</strong> e posteriormente em <strong>Execute</strong>.</p>
-<p>O retorna será um <code>JSON</code> informando se a API está rodando, como o mostrado abaixo:</p>
+<p>O retorno será um <code>JSON</code> informando se a API está rodando, como o mostrado abaixo:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;API rodando&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<hr />
 <h4 id="cadastrar-funcionario">✏️ Cadastrar funcionário</h4>
 <p>Para testar essa operação clique em <strong>Try it out</strong>, no campo Request body aparecerá o seguinte <code>JSON</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
@@ -694,8 +699,8 @@
 <span class="w">  </span><span class="nt">&quot;comportamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>Altere os valores das chaves, seguindo as <a href="../guia_de_uso/">Indicação ao Inserir Dados Falsos</a>.</p>
-<p>Atente-se também as <a href="..">Aceitação de valores duplicados</a> da Estrutura do Banco de Dados.</p>
+<p>Altere os valores das chaves, seguindo a <a href="../guia_de_uso/#indicação-ao-inserir-dados-falsos">Indicação ao Inserir Dados Falsos</a>.</p>
+<p>Atente-se também a <a href="..#estrutura-do-banco-de-dados">Aceitação de valores duplicados</a> da Estrutura do Banco de Dados.</p>
 <p>Exemplo:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Peter Jason Quill&quot;</span><span class="p">,</span><span class="w"></span>
@@ -709,7 +714,7 @@
 <span class="w">  </span><span class="nt">&quot;comportamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Proativo&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>O retorna será um <code>JSON</code> informando se o cadastro foi realizado com sucesso ✔️</p>
+<p>O retorno será um <code>JSON</code> informando se o cadastro foi realizado com sucesso ✔️</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cadastrado realizado com sucesso!&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Funcionário(a)&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Peter Jason Quill&quot;</span><span class="p">,</span><span class="w"></span>
@@ -723,10 +728,11 @@
 <span class="w">  </span><span class="nt">&quot;Causas&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dados duplicados, faltantes ou incorretos&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<hr />
 <h4 id="consultar-funcionario">🔎 Consultar funcionário</h4>
 <p>Para testar essa operação clique em <strong>Try it out</strong>, no campo Parameters digite um CPF já cadastrado no sistema, exemplo:</p>
 <p><img alt="imagem-parametro_cpf" src="../imagens/parametro_cpf.png" /></p>
-<p>Após clicar em <strong>Execute</strong>, o retorna será um <code>JSON</code> contendo as informações do funcionário correspondente ao CPF ✔️</p>
+<p>Após clicar em <strong>Execute</strong>, o retorno será um <code>JSON</code> contendo as informações do funcionário correspondente ao CPF ✔️</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2201&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Peter Jason Quill&quot;</span><span class="p">,</span><span class="w"></span>
@@ -739,14 +745,64 @@
 <span class="w">  </span><span class="nt">&quot;comportamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Proativo&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>Caso a consulta não for possível o retorno será um <code>JSON</code> informando o de erro ❌</p>
+<p>Caso haver erro ao consultar o retorno será um <code>JSON</code> informando o de erro ❌</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao consultar&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CPF incorreto ou não cadastrado&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<hr />
 <h4 id="modificar-informacoes">🔧 Modificar informações</h4>
+<p>Para testar essa operação clique em <strong>Try it out</strong>, no campo Request body aparecerá o seguinte <code>JSON</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;atributo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;novo_valor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Altere os valores das chaves, seguindo a <a href="../guia_de_uso/#indicação-ao-inserir-dados-falsos">Indicação ao Inserir Dados Falsos</a>.</p>
+<p>Atente-se também a <a href="..#estrutura-do-banco-de-dados">Aceitação de valores duplicados</a> da Estrutura do Banco de Dados.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2201</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;atributo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data_inicio&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;novo_valor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-12&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>O retorno será um <code>JSON</code> informando se a modificação foi realizado com sucesso ✔️</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2201 - Modificação realizado com sucesso!&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Atualização&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Atributo data_inicio setado para 2022-09-12&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Ou se houve algum tipo de erro ❌</p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="err">Erro</span><span class="w"> </span><span class="err">ao</span><span class="w"> </span><span class="kc">tentar</span><span class="w"> </span><span class="err">modi</span><span class="kc">f</span><span class="err">icar</span><span class="w"> </span><span class="err">um</span><span class="w"> </span><span class="err">a</span><span class="kc">tr</span><span class="err">ibu</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="kc">n</span><span class="err">ão</span><span class="w"> </span><span class="err">permi</span><span class="kc">t</span><span class="err">ido</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao modificar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O atributo codigo não pode ser modificado&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="err">#</span><span class="w"> </span><span class="err">Erro</span><span class="w"> </span><span class="err">ao</span><span class="w"> </span><span class="err">i</span><span class="kc">nf</span><span class="err">ormar</span><span class="w"> </span><span class="err">um</span><span class="w"> </span><span class="err">a</span><span class="kc">tr</span><span class="err">ibu</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">ou</span><span class="w"> </span><span class="err">valor</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">corre</span><span class="kc">ta</span><span class="err">me</span><span class="kc">nte</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao modificar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1054 (42S22): Unknown column &#39;dat_inicio&#39; in &#39;field list&#39;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Causas&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dados faltantes ou incorretos&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<hr />
 <h4 id="anular-registro">🧹 Anular registro</h4>
+<p>Para testar essa operação clique em <strong>Try it out</strong>, no campo Parameters digite um CPF que deseja anular o registro no sistema, exemplo:</p>
+<p><img alt="imagem-parametro_cpf" src="../imagens/delete_parametro_cpf.png" /></p>
+<p>O retorno será um <code>JSON</code> informando se a anulação do registro foi realizado com sucesso ✔️</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anulação realizada com sucesso!&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Anulação&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Deletado registro com CPF 123.123.123-12&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Observação</p>
+<p>A resposta será a mesma caso o CPF não esteja registrado. </p>
+</div>
 <hr />
 
 
