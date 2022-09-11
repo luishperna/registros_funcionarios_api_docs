@@ -8,7 +8,7 @@
 
 Primeiramente, para realizar os testes na API rapidamente e de maneira intuitiva, acesse o link abaixo:
 
-🖱️ [https://registros-funcionarios-api.herokuapp.com/docs](https://registros-funcionarios-api.herokuapp.com/docs)
+🖱️ [https://registros-funcionarios-api.luishperna.com.br/docs](https://registros-funcionarios-api.luishperna.com.br/docs)
 
 Após o carregamento da página, será possível acessar as rotas da API para testá-las, como mostrado na imagem a seguir:
 
@@ -53,7 +53,7 @@ O retorna será um `JSON` informando se a API está rodando, como o mostrado aba
 
 ``` json
 {
-  "Api": "Rodando"
+  "Status": "API rodando"
 }
 ```
 

@@ -31,4 +31,5 @@ Cargo                     | só nos compiuter                 | Desenvolvedor We
 Data de início ou entrada | 3000-09-07                       | 2022-09-07
 Data de cancelamento      | trabalhando ainda                | NULL
 Comportamento             | O melhor do mundo                | Proativo
+
 ---
