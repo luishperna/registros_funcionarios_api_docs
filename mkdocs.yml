@@ -11,25 +11,25 @@ edit_uri: ''
 # Customizando o menu de navegação do site
 nav:
     - Visão Geral: index.md
-    - Importante ⚠️: importante.md
-    - Testar API: testar_api.md
+    - Importante ⚠️: important.md
+    - Testar API: test_api.md
     - Guia de Uso:
-      - Considerações Iniciais: guia_de_uso/index.md
-      - Informações sobre a API: guia_de_uso/informacoes_sobre_a_api.md
-      - Verificando Status da API: guia_de_uso/verificando_status_api.md
-      - Como Cadastrar um Registro: guia_de_uso/como_cadastrar_um_registro.md
-      - Como Consultar um Registro: guia_de_uso/como_consultar_um_registro.md
-      - Como Modificar um Registro: guia_de_uso/como_modificar_um_registro.md
-      - Como Anular um Registro: guia_de_uso/como_anular_um_registro.md
-    - Códigos-fontes: codigos_fontes.md
-    - Desenvolvedor: desenvolvedor.md
+      - Considerações Iniciais: guide/index.md
+      - Informações sobre a API: guide/api_information.md
+      - Verificando Status da API: guide/checking_api_status.md
+      - Como Cadastrar um Registro: guide/how_to_register_a_record.md
+      - Como Consultar um Registro: guide/how_to_query_a_registry.md
+      - Como Modificar um Registro: guide/how_to_modify_a_registry.md
+      - Como Anular um Registro: guide/how_to_unregister.md
+    - Códigos-fontes: source_codes.md
+    - Desenvolvedor: developer.md
 
 # Customizando o tema do site
 theme:
   name: material
   language: pt-BR
-  logo: imagens/LuP.png
-  favicon: imagens/LuP.png
+  logo: images/LuP.png
+  favicon: images/LuP.png
   palette:
     - scheme: slate
       primary: blue

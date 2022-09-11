@@ -1,4 +1,4 @@
-# Como Consultar um Registro ![imagem-versao](https://img.shields.io/badge/PATCH-3eb096?style=flat-square)
+# Como Modificar um Registro ![imagem-versao](https://img.shields.io/badge/PATCH-3eb096?style=flat-square)
 
 Para modificar uma informação de um registro na API, no código, deve ser informado a `URL` correspondente a requisição PATCH e o corpo da requisição em `JSON`.
 

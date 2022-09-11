@@ -12,7 +12,7 @@ Primeiramente, para realizar os testes na API rapidamente e de maneira intuitiva
 
 Após o carregamento da página, será possível acessar as rotas da API para testá-las, como mostrado na imagem a seguir:
 
-![imagem-tela-rotas-api](./imagens/tela_rotas_api.png)
+![Imagem tela de rotas da API](./images/api_routes_screen.png)
 
 Escolha uma das operações mostradas no qual deseja executar.
 
@@ -83,7 +83,7 @@ Para testar essa operação clique em **Try it out**, no campo Request body apar
 }
 ```
 
-Altere os valores das chaves, seguindo a [Indicação ao Inserir Dados Falsos](./guia_de_uso/index.md#indicação-ao-inserir-dados-falsos).
+Altere os valores das chaves, seguindo a [Indicação ao Inserir Dados Falsos](./guide/index.md#indicação-ao-inserir-dados-falsos).
 
 Atente-se também a [Aceitação de valores duplicados](./index.md#estrutura-do-banco-de-dados) da Estrutura do Banco de Dados.
 
@@ -129,7 +129,7 @@ Ou se houve algum tipo de erro ❌
 
 Para testar essa operação clique em **Try it out**, no campo Parameters digite um CPF já cadastrado no sistema, exemplo:
 
-![imagem-parametro_cpf](./imagens/parametro_cpf.png)
+![Imagem parâmetro CPF](./images/get_cpf_parameter.png)
 
 Após clicar em **Execute**, o retorno será um `JSON` contendo as informações do funcionário correspondente ao CPF ✔️
 
@@ -170,7 +170,7 @@ Para testar essa operação clique em **Try it out**, no campo Request body apar
 }
 ```
 
-Altere os valores das chaves, seguindo a [Indicação ao Inserir Dados Falsos](./guia_de_uso/index.md#indicação-ao-inserir-dados-falsos).
+Altere os valores das chaves, seguindo a [Indicação ao Inserir Dados Falsos](./guide/index.md#indicação-ao-inserir-dados-falsos).
 
 Atente-se também a [Aceitação de valores duplicados](./index.md#estrutura-do-banco-de-dados) da Estrutura do Banco de Dados.
 
@@ -216,7 +216,7 @@ Ou se houve algum tipo de erro ❌
 
 Para testar essa operação clique em **Try it out**, no campo Parameters digite um CPF que deseja anular o registro no sistema, exemplo:
 
-![imagem-parametro_cpf](./imagens/delete_parametro_cpf.png)
+![Imagem parâmetro CPF](./images/delete_cpf_parameter.png)
 
 O retorno será um `JSON` informando se a anulação do registro foi realizado com sucesso ✔️
 

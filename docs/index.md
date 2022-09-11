@@ -97,6 +97,6 @@ A API integra com um banco de dados SGBD MySQL hospedado e modelado unicamente p
 
 A imagem a seguir exibe mais detalhamento da modelagem implementada:
 
-![imagem-python](./imagens/db_model.png)
+![Imagem modelagem do banco de dados](./images/db_model.png)
 
 ---

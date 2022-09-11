@@ -11,7 +11,7 @@ Este sou eu:
 Me chamo **Luís Henrique Perna**, estou graduando em **Engenharia de Software** e esse é mais um projetinho fonte de meus estudos na área de desenvolvimento de aplicações.
 
 <figure markdown>
-  ![Imagem perfil](imagens/perfil.png)
+  ![Imagem de perfil](images/profile.png)
 
   [🌐 Meu Portfólio 🌐](https://luishperna.com.br/)
 
