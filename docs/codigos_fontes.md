@@ -31,8 +31,8 @@ A RegistrosFuncionariosAPI foi desenvolvida a partir das seguintes técnologias:
 - Gerenciamento Variáveis de Ambiente: `python-dotenv`
 
 - Hospedagem/Deploy:
-  - API: `Heroku`
-  - MySQL: `db4free`
+    - API: `Vercel`
+    - MySQL: `db4free`
 
 - Editor de Código/IDE: `visual studio code`
 

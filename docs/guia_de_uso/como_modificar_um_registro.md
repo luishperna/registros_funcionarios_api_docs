@@ -14,13 +14,13 @@ Para modificar uma informação de um registro na API, no código, deve ser info
 
 O corpo da requisição deve ser no formato `JSON` contendo as seguintes **chaves**:
 
-1. codigo ➔ Código de cadastro funcionário(a).
+1. codigo ➔ Código de cadastro do funcionário(a).
 2. atributo ➔ Atributo no qual dejesa modificar.
 3. novo_valor ➔ Novo valor para o qual deseja ser modificado.
 
 !!! note "Observação"
 
-    A modificação só pode ser realiza no atributos: **cargo**, **data_inicio**, **data_cancelamento** e **comportamento**.
+    A modificação só pode ser realizada nos atributos: **cargo**, **data_inicio**, **data_cancelamento** e **comportamento**.
 
 Os **valores** correspondentes as chaves devem obedecer aos tipos de dados mostrado abaixo:
 
@@ -36,7 +36,7 @@ Os **valores** correspondentes as chaves devem obedecer aos tipos de dados mostr
 
 ## Respostas da Requisição
 
-Ao realizar a requisição pode-se retornar uma das duas repostas: status de **sucesso** ou status de **erro**.
+Ao realizar a requisição pode-se retornar uma das duas respostas: status de **sucesso** ou status de **erro**.
 
 ### Status de Sucesso ✔️
 
@@ -63,7 +63,7 @@ Essa resposta informa o tipo de erro detectado ao tentar realizar a requisição
 # Erro ao informar um atributo ou valor incorretamente
 {
   "Status": "Erro ao modificar",
-  "Tipo de erro": "{error}",
+  "Tipo de erro": "1054 (42S22): Unknown column 'dat_inicio' in 'field list'",
   "Causas": "Dados faltantes ou incorretos"
 }
 ```
@@ -80,10 +80,10 @@ Essa resposta informa o tipo de erro detectado ao tentar realizar a requisição
         # Importando a biblioteca requests para trabalhar com solicitações HTTP
         import requests
 
-        # Link público da API para requisições do tipo PATCH
+        # Link público da API para requisições do tipo PATCH - Modificar um registro
         url = 'https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes'
 
-        # Modificações no formato JSON a ser enviado na requisição POST
+        # Modificações no formato JSON a ser enviado na requisição PATCH - Modificar um registro
         modificacoes = '''{
             "codigo": "2201",
             "atributo": "data_inicio",

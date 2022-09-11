@@ -1,6 +1,6 @@
 # Como Consultar um Registro ![imagem-versao](https://img.shields.io/badge/GET-2094f3?style=flat-square)
 
-Para consultar um registro na API, no código ou navegador, deve ser informado a `URL` correspondente a requisição GET seguido do CPF do funcionário(a).
+Para consultar um registro na API, no código ou navegador, deve ser informado a `URL` correspondente a requisição GET - Consultar um registro, seguido do CPF do funcionário(a).
 
 ---
 
@@ -12,7 +12,7 @@ Para consultar um registro na API, no código ou navegador, deve ser informado a
 
 ## Requisição
 
-Para realizar está requisição basta alterar o `{cpf}` por um número de CPF já cadastrado.
+Para realizar esta requisição basta alterar o `{cpf}` por um número de CPF já cadastrado.
 
 ```
 # Link base
@@ -24,13 +24,13 @@ https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/123.
 
 !!! note "Observação"
 
-    A consulta pode ser feita tanto por códigos, quanto direto pelo navegador. 
+    A consulta pode ser feita tanto por códigos, quanto diretamente pelo navegador. 
 
 ---
 
 ## Respostas da Requisição
 
-Ao realizar a requisição pode-se retornar uma das duas repostas: status de **sucesso** ou status de **erro**.
+Ao realizar a requisição pode-se retornar uma das duas respostas: status de **sucesso** ou status de **erro**.
 
 ### Status de Sucesso ✔️
 

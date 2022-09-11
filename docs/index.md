@@ -23,7 +23,7 @@ Rotas (endpoint) para acesso à RegistrosFuncionariosAPI:
 
     `URL` [https://registros-funcionarios-api.luishperna.com.br](https://registros-funcionarios-api.luishperna.com.br)
 
-2. **Swagger/OpenAPI**
+2. **Swagger UI/OpenAPI**
 
     `URL` [https://registros-funcionarios-api.luishperna.com.br/docs](https://registros-funcionarios-api.luishperna.com.br/docs)
 
@@ -39,7 +39,7 @@ Rotas (endpoint) para acesso à RegistrosFuncionariosAPI:
 
 5. **Consultas**
 
-    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas](https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}](https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf})
 
 6. **Modificações**
 
@@ -47,13 +47,13 @@ Rotas (endpoint) para acesso à RegistrosFuncionariosAPI:
 
 7. **Anulações**
 
-    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes](https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes)
+    `URL` [https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes/{cpf}](https://registros-funcionarios-api.luishperna.com.br/funcionarios/anulacoes/{cpf})
 
 ---
 
 ## Compatibilidade da API
 
-A RegistrosFuncionariosAPI utiliza do formatado [JSON](https://www.alura.com.br/artigos/o-que-e-json?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePrXco4vblHC4vywuTu31zVXxDIZMZik2M_7Sm9iHTcAm_EUtxBgbAaAkWpEALw_wcB) para realizar as comunicações entre os sistemas, assim facilitando o tráfego de dados entre aplicações distintas e havendo um ponto em comum entre diversas linguagens de programação.
+A RegistrosFuncionariosAPI utiliza do formato [JSON](https://www.alura.com.br/artigos/o-que-e-json?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePrXco4vblHC4vywuTu31zVXxDIZMZik2M_7Sm9iHTcAm_EUtxBgbAaAkWpEALw_wcB) para realizar as comunicações entre os sistemas, assim facilitando o tráfego de dados entre aplicações distintas e havendo um ponto em comum entre diversas linguagens de programação.
 
 ---
 
@@ -93,7 +93,7 @@ Comportamento             | ✔️                              | Aceita string 
 
 ### Modelagem do Banco de Dados
 
-A API integra com um banco de dados SGBD MySQL hospedado e modelado unicamente para está aplicação.
+A API integra com um banco de dados SGBD MySQL hospedado e modelado unicamente para essa aplicação.
 
 A imagem a seguir exibe mais detalhamento da modelagem implementada:
 

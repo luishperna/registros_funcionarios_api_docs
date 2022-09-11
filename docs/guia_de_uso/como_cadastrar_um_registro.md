@@ -36,7 +36,7 @@ Os **valores** correspondentes as chaves devem obedecer aos tipos de dados mostr
 
 ## Respostas da Requisição
 
-Ao realizar a requisição pode-se retornar uma das duas repostas: status de **sucesso** ou status de **erro**.
+Ao realizar a requisição pode-se retornar uma das duas respostas: status de **sucesso** ou status de **erro**.
 
 ### Status de Sucesso ✔️
 
@@ -74,10 +74,10 @@ Essa resposta informa o tipo de erro detectado ao tentar realizar a requisição
         # Importando a biblioteca requests para trabalhar com solicitações HTTP
         import requests
 
-        # Link público da API para requisições do tipo POST
+        # Link público da API para requisições do tipo POST - Cadastrar um registro
         url = 'https://registros-funcionarios-api.luishperna.com.br/funcionarios/cadastros'
 
-        # Informações no formato JSON a ser enviado na requisição POST
+        # Informações no formato JSON a ser enviado na requisição POST - Cadastrar um registro
         informacoes = '''{
             "nome": "Peter Jason Quill",
             "data_nascimento": "1980-12-20",

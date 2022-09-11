@@ -16,13 +16,13 @@ O foco da RegistrosFuncionariosApi é apenas para **fins de estudo pessoal** sob
 
 A **utilização** da RegistrosFuncionariosAPI está restrita **apenas para testes** ou **fins de estudo sobre consumo de API**, visto que os **dados inseridos** poderam ser **acessados, alterados ou apagados** por **qualquer usuário** com acesso a API.
 
-Além disso, a **API** e o **banco de dados** estão **sujeitos a paradas ou desligamento** por fatores externos, como os serviços de hospedagens utilizadas para o deploy das aplicações.
+Além disso, a **API** e o **banco de dados** estão **sujeitos a paradas ou desligamento** por fatores externos, como os serviços de hospedagens utilizados para o deploy das aplicações.
 
 ---
 
 ## Cuidados com Informações Pessoais
 
-Como mencionado anteriormente, as **informações inseridos** correm o risco de serem **acessadas, alteradas ou apagadas** por **qualquer usuário** com acesso a API, visto que a integração com o banco de dados não apresenta autenticação, o que acarreta em acesso público aos dados armazenados.
+Como mencionado anteriormente, as **informações inseridas** correm o risco de serem **acessadas, alteradas ou apagadas** por **qualquer usuário** com acesso a API, visto que a integração com o banco de dados não apresenta autenticação, o que acarreta em acesso público aos dados armazenados.
 
 **Recomendo fortemente** que para os testes ou uso da API sejam **inseridas informações falsas** ao realizar um cadastro de um funcionário.
 

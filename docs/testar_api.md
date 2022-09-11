@@ -24,7 +24,7 @@ Clique na operação escolhida e siga a orientação abaixo correspondente a sua
 
 Para testar essa operação basta clicar em **Try it out** e posteriormente em **Execute**.
 
-O retorna será um `JSON` contento as informações sobre a API, como o mostrado abaixo:
+O retorno será um `JSON` contento as informações sobre a API, como o mostrado abaixo:
 
 ``` json
 {
@@ -49,7 +49,7 @@ O retorna será um `JSON` contento as informações sobre a API, como o mostrado
 
 Para testar essa operação basta clicar em **Try it out** e posteriormente em **Execute**.
 
-O retorna será um `JSON` informando se a API está rodando, como o mostrado abaixo:
+O retorno será um `JSON` informando se a API está rodando, como o mostrado abaixo:
 
 ``` json
 {
@@ -75,9 +75,9 @@ Para testar essa operação clique em **Try it out**, no campo Request body apar
 }
 ```
 
-Altere os valores das chaves, seguindo as [Indicação ao Inserir Dados Falsos](./guia_de_uso/index.md).
+Altere os valores das chaves, seguindo a [Indicação ao Inserir Dados Falsos](./guia_de_uso/index.md).
 
-Atente-se também as [Aceitação de valores duplicados](./index.md) da Estrutura do Banco de Dados.
+Atente-se também a [Aceitação de valores duplicados](./index.md) da Estrutura do Banco de Dados.
 
 Exemplo:
 
@@ -95,7 +95,7 @@ Exemplo:
 }
 ```
 
-O retorna será um `JSON` informando se o cadastro foi realizado com sucesso ✔️
+O retorno será um `JSON` informando se o cadastro foi realizado com sucesso ✔️
 
 ``` json
 {
@@ -121,7 +121,7 @@ Para testar essa operação clique em **Try it out**, no campo Parameters digite
 
 ![imagem-parametro_cpf](./imagens/parametro_cpf.png)
 
-Após clicar em **Execute**, o retorna será um `JSON` contendo as informações do funcionário correspondente ao CPF ✔️
+Após clicar em **Execute**, o retorno será um `JSON` contendo as informações do funcionário correspondente ao CPF ✔️
 
 ``` json
 {
@@ -137,7 +137,7 @@ Após clicar em **Execute**, o retorna será um `JSON` contendo as informações
 }
 ```
 
-Caso a consulta não for possível o retorno será um `JSON` informando o de erro ❌
+Caso haver erro ao consultar o retorno será um `JSON` informando o de erro ❌
 
 ``` json
 {

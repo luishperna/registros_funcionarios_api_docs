@@ -1,6 +1,6 @@
 # Verificando Status da API ![imagem-versao](https://img.shields.io/badge/GET-2094f3?style=flat-square)
 
-Para verificar o status da API, no código, deve ser informado a `URL` correspondente a requisição GET.
+Para verificar o status da API, no código ou no navegador, deve ser informado a `URL` correspondente a requisição GET - Status da API.
 
 ---
 
@@ -12,7 +12,7 @@ Para verificar o status da API, no código, deve ser informado a `URL` correspon
 
 ## Requisição
 
-Para realizar está requisição basta utilizar a URL.
+Para realizar esta requisição basta utilizar a URL.
 
 ```
 # Link para verificação do status da API
@@ -21,7 +21,7 @@ https://registros-funcionarios-api.luishperna.com.br/status`
 
 !!! note
 
-    A verificação pode ser feita tanto por códigos, quanto direto pelo navegador. 
+    A verificação pode ser feita tanto por códigos, quanto diretamente pelo navegador. 
 
 ---
 

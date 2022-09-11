@@ -12,7 +12,9 @@ Observação: A primeira executação pode apresentar um aumento nesse atraso pe
 
 Vale ressaltar que os navegadores só aceitam requisições HTTP que utilizam do método `GET`, sendo assim algumas rotas (_URL_) desta API não poderão ser executadas diretamento pelo navegador.
 
-Observação: Os métodos de cada rota estão informados neste **Guia de Uso** e na rota [Home da API](https://registros-funcionarios-api.herokuapp.com).
+!!! note "Observação"
+
+    Os métodos de cada rota estão informados neste **Guia de Uso** e na rota [Home da API](https://registros-funcionarios-api.luishperna.com.br).
 
 ---
 

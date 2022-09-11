@@ -30,7 +30,7 @@ Ao realizar a requisição é esperado apenas um retorno de status de **sucesso*
 
 ### Status de Sucesso ✔️
 
-Essa resposta informa o cpf do(a) funcionário(a) que foi deletado.
+Essa resposta informa o CPF do(a) funcionário(a) que foi deletado.
 
 ``` JSON
 {
