@@ -383,9 +383,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Como Modificar um Registro
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Como Modificar um Registro
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corpo-da-requisicao" class="md-nav__link">
+    Corpo da Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-da-requisicao" class="md-nav__link">
+    Respostas da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-erro" class="md-nav__link">
+    Status de Erro ❌
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -462,6 +534,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corpo-da-requisicao" class="md-nav__link">
+    Corpo da Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-da-requisicao" class="md-nav__link">
+    Respostas da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-erro" class="md-nav__link">
+    Status de Erro ❌
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -475,6 +603,100 @@
 
 
 <h1 id="como-consultar-um-registro">Como Consultar um Registro <img alt="imagem-versao" src="https://img.shields.io/badge/PATCH-3eb096?style=flat-square" /></h1>
+<p>Para modificar uma informação de um registro na API, no código, deve ser informado a <code>URL</code> correspondente a requisição PATCH e o corpo da requisição em <code>JSON</code>.</p>
+<hr />
+<h2 id="url">URL</h2>
+<p><a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes">https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes</a></p>
+<hr />
+<h2 id="corpo-da-requisicao">Corpo da Requisição</h2>
+<p>O corpo da requisição deve ser no formato <code>JSON</code> contendo as seguintes <strong>chaves</strong>:</p>
+<ol>
+<li>codigo ➔ Código de cadastro funcionário(a).</li>
+<li>atributo ➔ Atributo no qual dejesa modificar.</li>
+<li>novo_valor ➔ Novo valor para o qual deseja ser modificado.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Observação</p>
+<p>A modificação só pode ser realiza no atributos: <strong>cargo</strong>, <strong>data_inicio</strong>, <strong>data_cancelamento</strong> e <strong>comportamento</strong>.</p>
+</div>
+<p>Os <strong>valores</strong> correspondentes as chaves devem obedecer aos tipos de dados mostrado abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">i</span><span class="kc">nt</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;atributo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;novo_valor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<hr />
+<h2 id="respostas-da-requisicao">Respostas da Requisição</h2>
+<p>Ao realizar a requisição pode-se retornar uma das duas repostas: status de <strong>sucesso</strong> ou status de <strong>erro</strong>.</p>
+<h3 id="status-de-sucesso">Status de Sucesso ✔️</h3>
+<p>Essa resposta informa a modificação realizada no registro do funcionário(a).</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2201 - Modificação realizado com sucesso!&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Atualização&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Atributo data_inicio setado para 2022-09-11&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="status-de-erro">Status de Erro ❌</h3>
+<p>Essa resposta informa o tipo de erro detectado ao tentar realizar a requisição.</p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="err">Erro</span><span class="w"> </span><span class="err">ao</span><span class="w"> </span><span class="kc">tentar</span><span class="w"> </span><span class="err">modi</span><span class="kc">f</span><span class="err">icar</span><span class="w"> </span><span class="err">um</span><span class="w"> </span><span class="err">a</span><span class="kc">tr</span><span class="err">ibu</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="kc">n</span><span class="err">ão</span><span class="w"> </span><span class="err">permi</span><span class="kc">t</span><span class="err">ido</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao modificar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O atributo codigo não pode ser modificado&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="err">#</span><span class="w"> </span><span class="err">Erro</span><span class="w"> </span><span class="err">ao</span><span class="w"> </span><span class="err">i</span><span class="kc">nf</span><span class="err">ormar</span><span class="w"> </span><span class="err">um</span><span class="w"> </span><span class="err">a</span><span class="kc">tr</span><span class="err">ibu</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">ou</span><span class="w"> </span><span class="err">valor</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">corre</span><span class="kc">ta</span><span class="err">me</span><span class="kc">nte</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao modificar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{error}&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Causas&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dados faltantes ou incorretos&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<hr />
+<h2 id="exemplo-de-consumo-em-python">Exemplo de Consumo em Python</h2>
+<div class="admonition example">
+<p class="admonition-title">Modificando um registro em Python</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">Resposta de Sucesso</label><label for="__tabbed_1_3">Resposta de Erro</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1"># Importando a biblioteca requests para trabalhar com solicitações HTTP</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># Link público da API para requisições do tipo PATCH</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://registros-funcionarios-api.luishperna.com.br/funcionarios/modificacoes&#39;</span>
+
+<span class="c1"># Modificações no formato JSON a ser enviado na requisição POST</span>
+<span class="n">modificacoes</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;{</span>
+<span class="s1">    &quot;codigo&quot;: &quot;2201&quot;,</span>
+<span class="s1">    &quot;atributo&quot;: &quot;data_inicio&quot;,</span>
+<span class="s1">    &quot;novo_valor&quot;: &quot;2022-09-11&quot;</span>
+<span class="s1">    }&#39;&#39;&#39;</span>
+
+<span class="c1"># Resposta da requisição feita a partir do link e JSON passados como parâmetros</span>
+<span class="n">resposta</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">patch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">modificacoes</span><span class="p">)</span>
+
+<span class="c1"># Obtendo o JSON da resposta da API</span>
+<span class="n">dados</span> <span class="o">=</span> <span class="n">resposta</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Mostrando a resposta no terminal</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dados</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>{&#39;Status&#39;: &#39;2201 - Modificação realizado com sucesso!&#39;, &#39;Atualização&#39;: &#39;Atributo data_inicio setado para 2022-09-11&#39;}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code># Erro ao tentar modificar um atributo não permitido
+{&#39;Status&#39;: &#39;Erro ao modificar&#39;, &#39;Tipo de erro&#39;: &#39;O atributo codigo não pode ser modificado&#39;}
+
+# Erro ao informar um atributo ou valor incorretamente
+{&#39;Status&#39;: &#39;Erro ao modificar&#39;, &#39;Tipo de erro&#39;: &quot;1054 (42S22): Unknown column &#39;dat_inicio&#39; in &#39;field list&#39;&quot;, &#39;Causas&#39;: &#39;Dados faltantes ou incorretos&#39;}
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<hr />
 
 
 

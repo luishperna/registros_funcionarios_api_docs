@@ -369,9 +369,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Como Consultar um Registro
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Como Consultar um Registro
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisicao" class="md-nav__link">
+    Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-da-requisicao" class="md-nav__link">
+    Respostas da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-erro" class="md-nav__link">
+    Status de Erro ❌
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -462,6 +534,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisicao" class="md-nav__link">
+    Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-da-requisicao" class="md-nav__link">
+    Respostas da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-de-erro" class="md-nav__link">
+    Status de Erro ❌
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -475,30 +603,85 @@
 
 
 <h1 id="como-consultar-um-registro">Como Consultar um Registro <img alt="imagem-versao" src="https://img.shields.io/badge/GET-2094f3?style=flat-square" /></h1>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">saída</label><label for="__tabbed_1_3">erro</label></div>
+<p>Para consultar um registro na API, no código ou navegador, deve ser informado a <code>URL</code> correspondente a requisição GET seguido do CPF do funcionário(a).</p>
+<hr />
+<h2 id="url">URL</h2>
+<p><a href="https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}">https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}</a></p>
+<hr />
+<h2 id="requisicao">Requisição</h2>
+<p>Para realizar está requisição basta alterar o <code>{cpf}</code> por um número de CPF já cadastrado.</p>
+<div class="highlight"><pre><span></span><code># Link base
+https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/{cpf}`
+
+# Consultando funcionário com o número de CPF 123.123.123-12
+https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/123.123.123-12
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Observação</p>
+<p>A consulta pode ser feita tanto por códigos, quanto direto pelo navegador. </p>
+</div>
+<hr />
+<h2 id="respostas-da-requisicao">Respostas da Requisição</h2>
+<p>Ao realizar a requisição pode-se retornar uma das duas repostas: status de <strong>sucesso</strong> ou status de <strong>erro</strong>.</p>
+<h3 id="status-de-sucesso">Status de Sucesso ✔️</h3>
+<p>Essa resposta informa os dados do funcionário(a) cadastrado(a).</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2201&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Peter Jason Quill&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data_nascimento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1980-12-20&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;cpf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123.123.123-12&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;perterquill@gmail.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;cargo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Desenvolvedor Web&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data_inicio&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-07&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data_cancelamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;None&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;comportamento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Proativo&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="status-de-erro">Status de Erro ❌</h3>
+<p>Essa resposta informa o tipo de erro detectado ao tentar realizar a requisição.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Erro ao consultar&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Tipo de erro&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CPF incorreto ou não cadastrado&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<hr />
+<h2 id="exemplo-de-consumo-em-python">Exemplo de Consumo em Python</h2>
+<div class="admonition example">
+<p class="admonition-title">Consultando um registro em Python</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">Resposta de Sucesso</label><label for="__tabbed_1_3">Resposta de Erro</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Importando a biblioteca requests para trabalhar com solicitações HTTP</span>
+<span class="kn">import</span> <span class="nn">requests</span>
 
+<span class="c1"># Informação do número do CPF</span>
 <span class="n">cpf</span> <span class="o">=</span> <span class="s2">&quot;123.123.123-12&quot;</span>
+
+<span class="c1"># Link público da API para requisições do tipo GET - Consultar um registro</span>
 <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://registros-funcionarios-api.luishperna.com.br/funcionarios/consultas/</span><span class="si">{</span><span class="n">cpf</span><span class="si">}</span><span class="s1">&#39;</span>
 
+<span class="c1"># Resposta da requisição feita a partir do link juntamento com o CPF</span>
 <span class="n">resposta</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># Obtendo o JSON da resposta da API</span>
 <span class="n">dados</span> <span class="o">=</span> <span class="n">resposta</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
+<span class="c1"># Mostrando a resposta no terminal</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dados</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>{&#39;codigo&#39;: &#39;2201&#39;, &#39;nome&#39;: &#39;Peter Jason Quill&#39;, &#39;data_nascimento&#39;: &#39;1980-12-20&#39;, &#39;cpf&#39;: &#39;123.123.123-12&#39;, &#39;email&#39;: &#39;perterquill@gmail.com&#39;, &#39;cargo&#39;: &#39;Desenvolvedor Web&#39;, &#39;data_inicio&#39;: &#39;2022-09-07&#39;, &#39;data_cancelamento&#39;: &#39;None&#39;, &#39;comportamento&#39;: &#39;Proativo&#39;}
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;codigo&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">2201</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">ome&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Pe</span><span class="kc">ter</span><span class="w"> </span><span class="err">Jaso</span><span class="kc">n</span><span class="w"> </span><span class="err">Quill&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;da</span><span class="kc">ta</span><span class="err">_</span><span class="kc">nas</span><span class="err">cime</span><span class="kc">nt</span><span class="err">o&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">1980-12-20</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;cp</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">123.123.123-12</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;email&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;per</span><span class="kc">ter</span><span class="err">quill@gmail.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;cargo&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Dese</span><span class="kc">n</span><span class="err">volvedor</span><span class="w"> </span><span class="err">Web&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;da</span><span class="kc">ta</span><span class="err">_i</span><span class="kc">n</span><span class="err">icio&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">2022-09-07</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;da</span><span class="kc">ta</span><span class="err">_ca</span><span class="kc">n</span><span class="err">celame</span><span class="kc">nt</span><span class="err">o&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;No</span><span class="kc">ne</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;compor</span><span class="kc">ta</span><span class="err">me</span><span class="kc">nt</span><span class="err">o&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Proa</span><span class="kc">t</span><span class="err">ivo&#39;</span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>{&#39;Status&#39;: &#39;Erro ao consultar&#39;, &#39;Tipo de erro&#39;: &#39;CPF incorreto ou não cadastrado&#39;}
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;S</span><span class="kc">tatus</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Erro</span><span class="w"> </span><span class="err">ao</span><span class="w"> </span><span class="err">co</span><span class="kc">nsultar</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;Tipo</span><span class="w"> </span><span class="err">de</span><span class="w"> </span><span class="err">erro&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;CPF</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">corre</span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">ou</span><span class="w"> </span><span class="kc">n</span><span class="err">ão</span><span class="w"> </span><span class="err">cadas</span><span class="kc">tra</span><span class="err">do&#39;</span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
 </div>
+</div>
+<hr />
 
 
 

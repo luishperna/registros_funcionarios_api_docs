@@ -341,9 +341,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Verificando Status da API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Verificando Status da API
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisicao" class="md-nav__link">
+    Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resposta-da-requisicao" class="md-nav__link">
+    Resposta da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Resposta da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -462,6 +527,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisicao" class="md-nav__link">
+    Requisição
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resposta-da-requisicao" class="md-nav__link">
+    Resposta da Requisição
+  </a>
+  
+    <nav class="md-nav" aria-label="Resposta da Requisição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-de-sucesso" class="md-nav__link">
+    Status de Sucesso ✔️
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-consumo-em-python" class="md-nav__link">
+    Exemplo de Consumo em Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -475,6 +589,60 @@
 
 
 <h1 id="verificando-status-da-api">Verificando Status da API <img alt="imagem-versao" src="https://img.shields.io/badge/GET-2094f3?style=flat-square" /></h1>
+<p>Para verificar o status da API, no código, deve ser informado a <code>URL</code> correspondente a requisição GET.</p>
+<hr />
+<h2 id="url">URL</h2>
+<p><a href="https://registros-funcionarios-api.luishperna.com.br/status">https://registros-funcionarios-api.luishperna.com.br/status</a></p>
+<hr />
+<h2 id="requisicao">Requisição</h2>
+<p>Para realizar está requisição basta utilizar a URL.</p>
+<div class="highlight"><pre><span></span><code># Link para verificação do status da API
+https://registros-funcionarios-api.luishperna.com.br/status`
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A verificação pode ser feita tanto por códigos, quanto direto pelo navegador. </p>
+</div>
+<hr />
+<h2 id="resposta-da-requisicao">Resposta da Requisição</h2>
+<p>Ao realizar a requisição, por parte da API, é esperado apenas o retorno de status de <strong>sucesso</strong>, caso contrário, significa que a API não está sendo executada.</p>
+<h3 id="status-de-sucesso">Status de Sucesso ✔️</h3>
+<p>Essa resposta informa se a API está rodando.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;API rodando&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<hr />
+<h2 id="exemplo-de-consumo-em-python">Exemplo de Consumo em Python</h2>
+<div class="admonition example">
+<p class="admonition-title">Verificando o status da API em Python</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">main.py</label><label for="__tabbed_1_2">Resposta de Sucesso</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1"># Importando a biblioteca requests para trabalhar com solicitações HTTP</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># Link público da API para requisições do tipo GET - Status da API</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://registros-funcionarios-api.luishperna.com.br/status&#39;</span>
+
+<span class="c1"># Resposta da requisição feita a partir do link juntamento com o CPF</span>
+<span class="n">resposta</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># Obtendo o JSON da resposta da API</span>
+<span class="n">dados</span> <span class="o">=</span> <span class="n">resposta</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Mostrando a resposta no terminal</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dados</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;S</span><span class="kc">tatus</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;API</span><span class="w"> </span><span class="err">roda</span><span class="kc">n</span><span class="err">do&#39;</span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<hr />
 
 
 
