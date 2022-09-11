@@ -31,6 +31,9 @@ Os **valores** correspondentes as chaves devem obedecer aos tipos de dados mostr
   "comportamento": "string"
 }
 ```
+!!! note "Observação"
+
+    Caso o funcionário(a) ainda esteja ativo(a) no cargo passe `NULL` ou `null` como valor da chave data_cancelamento.
 
 ---
 

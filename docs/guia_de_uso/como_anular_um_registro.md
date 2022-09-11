@@ -35,7 +35,7 @@ Essa resposta informa o CPF do(a) funcionário(a) que foi deletado.
 ``` JSON
 {
   "Status": "Anulação realizada com sucesso!",
-  "Anulação": "Deletado registro com cpf 123.123.123-12"
+  "Anulação": "Deletado registro com CPF 123.123.123-12"
 }
 ```
 
@@ -74,7 +74,7 @@ Essa resposta informa o CPF do(a) funcionário(a) que foi deletado.
     === "Resposta de Sucesso"
 
         ``` JSON
-        {'Status': 'Anulação realizada com sucesso!', 'Anulação': 'Deletado registro com cpf 123.123.123-12'}
+        {'Status': 'Anulação realizada com sucesso!', 'Anulação': 'Deletado registro com CPF 123.123.123-12'}
         ```
 
 ---
