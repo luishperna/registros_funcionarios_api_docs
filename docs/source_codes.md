@@ -32,7 +32,7 @@ A RegistrosFuncionariosAPI foi desenvolvida a partir das seguintes técnologias:
 
 - Hospedagem/Deploy:
     - API: `Vercel`
-    - MySQL: `db4free`
+    - MySQL: `TiDB Cloud`
 
 - Editor de Código/IDE: `visual studio code`
 
