@@ -1,4 +1,4 @@
-<h1 align="center">Documentação RegistrosFuncionariosApi</h1>
+<h1 align="center">Documentação RegistrosFuncionariosAPI</h1>
 
 <p align="center">
 <img src="https://img.shields.io/badge/ssg-mkdocs-539cf2?style=for-the-badge"/>
@@ -6,13 +6,13 @@
 <img src="https://img.shields.io/badge/serialização de dados-yaml-cb171e?style=for-the-badge"/>
 </p>
 
-Esta documentação foi elaborada para guiar os usuários ou desenvolvedores no processo de consumir a [RegistrosFuncionariosApi](https://github.com/luishperna/registros_funcionarios_api).
+Esta documentação foi elaborada para guiar os usuários ou desenvolvedores no processo de consumir a [RegistrosFuncionariosAPI](https://github.com/luishperna/registros_funcionarios_api).
  
 ---
 
 ## :blue_book: Documentação
 
-Acesse a **documentação da RegistrosFuncionariosApi** para saber mais sobre a API e como utilizá-la.
+Acesse a **documentação da RegistrosFuncionariosAPI** para saber mais sobre a API e como utilizá-la.
 
 Disponível em: [https://registros-funcionarios-api-docs.luishperna.com.br](https://registros-funcionarios-api-docs.luishperna.com.br)
 

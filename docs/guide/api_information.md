@@ -6,7 +6,7 @@ Para obter mais informações da API deve ser informado a `URL` correspondente a
 
 ## URLs
 
-**Home** - Informações do Projeto RegistrosFuncionariosApi:
+**Home** - Informações do Projeto RegistrosFuncionariosAPI:
 
 - [https://registros-funcionarios-api.luishperna.com.br](https://registros-funcionarios-api.luishperna.com.br)
 

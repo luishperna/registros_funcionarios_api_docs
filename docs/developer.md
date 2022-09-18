@@ -18,6 +18,6 @@ Me chamo **Luís Henrique Perna**, estou graduando em **Engenharia de Software**
   Perfil [GitHub](https://github.com/luishperna)
 </figure>
 
-Desenvolvi a RegistrosFuncionariosApi com o intuito de aprender mais sobre APIs, além de gregar também a cerca de documentações de softwares, como essa aqui.
+Desenvolvi a RegistrosFuncionariosAPI com o intuito de aprender mais sobre APIs, além de gregar também a cerca de documentações de softwares, como essa aqui.
 
 ---

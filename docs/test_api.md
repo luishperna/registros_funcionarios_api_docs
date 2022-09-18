@@ -4,7 +4,7 @@
 
 ---
 
-## Como testar a RegistrosFuncionariosApi
+## Como testar a RegistrosFuncionariosAPI
 
 Primeiramente, para realizar os testes na API rapidamente e de maneira intuitiva, acesse o link abaixo:
 
@@ -31,7 +31,7 @@ O retorno será um `JSON` contento as informações sobre a API, como o mostrado
 ``` json
 {
   "Aplicação": "Web/API",
-  "Projeto": "RegistrosFuncionariosApi",
+  "Projeto": "RegistrosFuncionariosAPI",
   "Usabilidade": "Operações CRUD de registros de funcionários no banco de dados",
   "Documentação": "https://registros-funcionarios-api-docs.luishperna.com.br",
   "Rotas": {
